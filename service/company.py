@@ -5,10 +5,10 @@ import sqlite3
 #TODO: replace this w some function to get relative path
 DATABASE = '/Users/mboker/PycharmProjects/citadel_project/beta_schema.db'
 
+
 class Company(Resource):
     def get(self):
         args = request.args
-
         # companies = company.get_companies(query_string)
         query_string = args['q']
         companies = get_companies(query_string)
@@ -24,8 +24,6 @@ def get_companies(query_string):
     return rows
 
 
-
-#TODO move these to something shared with main project
 def get_company_db():
     db = getattr(g, '_database', None)
     if db is None:

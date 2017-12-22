@@ -1,7 +1,7 @@
 var betas = {},
-    startDate = 'DATE',
-    endDate = 'DATE',
-    market = ['a'];
+    symbols = [],
+    startDate = null,
+    endDate = null;
 
 $("#symbol_input").tokenInput("http://127.0.0.1:5000/companies",
     {
@@ -11,45 +11,38 @@ $("#symbol_input").tokenInput("http://127.0.0.1:5000/companies",
         'propertyToSearch': 'DISPLAY',
         'theme': 'mac',
         'onAdd': function (item) {
-            getBeta(item.id);
+            symbols.push(item.id);
+            if (startDate && endDate) {
+                getBetas([item.id], startDate, endDate);
+            }
         },
         'onDelete': function (item) {
+            var idx = symbols.indexOf(item);
+            if (idx > -1){
+                symbols.splice(idx, 1);
+            }
             removeBeta(item.id);
         }
     });
 
 var fifteenYearsAgo = new Date();
-fifteenYearsAgo.setYear(fifteenYearsAgo.getYear()-15);
+fifteenYearsAgo.setYear(fifteenYearsAgo.getFullYear()-15);
 $("#date_range").dateRangePicker({
     autoClose:true,
-    'startDate': fifteenYearsAgo.toISOString().substr(0,10),
-    'endDate': '2017-12-20',
+    startDate: fifteenYearsAgo.toISOString().substr(0,10),
+    endDate: '2017-12-20',
+    monthSelect: true,
+    yearSelect: true,
+
     setValue: function(s){
         if(!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
             startDate = s.substr(0, 10);
             endDate = s.substr(-10, 10);
-            getBetas(Object.keys(betas), startDate, endDate);
+            getBetas(symbols, startDate, endDate);
             $(this).val(s);
         }
     }
 });
-
-function getBeta(symbol) {
-    data = {'market':market,
-            'symbol': symbol};
-    $.ajax({
-        //TODO replace URL
-        url: 'http://127.0.0.1:5000/beta',
-        method: 'POST',
-        data: data,
-        success: function (response) {
-            Object.keys(response['changes']).forEach(function(symbol){
-               betas[symbol] = response['changes'][symbol];
-            });
-            drawChart();
-        }
-    });
-}
 
 function removeBeta(symbol){
     delete betas[symbol];
@@ -60,14 +53,16 @@ function getBetas(symbols, startDate, endDate) {
     data = {'start': startDate,
             'end':endDate,
             'symbols':symbols};
+
     $.ajax({
         //TODO replace URL
         url: 'http://127.0.0.1:5000/betas',
         method: 'POST',
         data: data,
+        dataType: 'json',
         success: function (response) {
-            Object.keys(response['changes']).forEach(function(symbol){
-               betas[symbol] = response['changes'][symbol];
+            Object.keys(response).forEach(function(symbol){
+               betas[symbol] = response[symbol];
             });
             drawChart();
         }
@@ -84,11 +79,11 @@ function drawChart() {
 
     Object.keys(betas).forEach(function (symbol) {
 
-        betas[symbol].forEach(function (change) {
-            if (!chartDataObj[change.date]) {
-                chartDataObj[change.date] = {};
+        Object.keys(betas[symbol]).forEach(function (date) {
+            if (!chartDataObj[date]) {
+                chartDataObj[date] = {};
             }
-            chartDataObj[change.date][symbol] = change.value;
+            chartDataObj[date][symbol] = betas[symbol][date];
         });
 
 
@@ -151,6 +146,7 @@ function drawChart() {
         "chartCursor": {
             "pan": true,
             "valueLineEnabled": true,
+
             "cursorAlpha": 1,
             "cursorColor": "#258cbb",
             "limitToGraph": "g1",
