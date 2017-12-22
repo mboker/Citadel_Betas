@@ -20,8 +20,22 @@
     </head>
     <body>
         <div class="inputs">
-            <span class="symbols_label">Symbols: </span><input id="symbol_input"/>
-            <span class="date_label">Date Range: </span><input id="date_range"/>
+            <div class="row" id="first_row">
+                <div class="date_input">
+                    <span class="date_label">Date Range: </span><input id="date_range"/>
+                </div>
+                <div class="window_input">
+                    <span class="window_label">Rolling Window (Days): </span><input id="window" type="number" value="30"/>
+                </div>
+            </div>
+            <div class="row" id="second_row">
+                <div class="symbol_input">
+                    <span class="symbols_label">Symbols: </span><input id="symbol_input"/>
+                </div>
+                <div class="button_holder">
+                    <input id="retrieve_button" type="button" value="Get Betas">
+                </div>
+            </div>
         </div>
         <div id="chart_div"></div>
 

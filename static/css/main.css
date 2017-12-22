@@ -18,14 +18,38 @@ body{
     bottom:0px;
 }
 
-#date_range{
-    width:200px;
+.symbol_input{
+    display: inline-block;
+}
+
+.button_holder{
+    display: inline-block;
+    margin-left: 42px;
 }
 
 .token-input-list-mac{
     display: inline-block;
+    border-bottom: 1px solid black;
     width: 500px;
     margin-bottom: -12px !important;
+}
+
+.date_input{
+    display: inline-block;
+}
+
+.date_input input{
+    text-align: center;
+    width: 230px;
+}
+
+.window_input{
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.window_input input{
+    width: 100px;
 }
 
 .inputs{

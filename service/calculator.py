@@ -1,7 +1,5 @@
 import numpy as np
 import pandas as pd
-import multiprocessing
-import time
 
 # def _roll(collection, window):
 #     for i in range(collection.shape[0] - window + 1):
@@ -31,19 +29,8 @@ def roll(df, window):
         yield pd.DataFrame(df[i:i+window+1])
 
 def calculate(collection, window):
-    try:
-        cpus = multiprocessing.cpu_count()
-    except NotImplementedError:
-        cpus = 2
-    pool = multiprocessing.Pool(processes=cpus)
-
-    pool_start = time.time()
-    pooled = pool.map(calc_betas, (sub_frame for sub_frame in roll(collection,window)))
-    pool_total = time.time() - pool_start
-
-    non_pooled_start = time.time()
+    collection = collection.pct_change().dropna()
     betas_set = [calc_betas(sub_frame) for sub_frame in roll(collection, window)]
-    non_pooled_total = time.time() - non_pooled_start
 
     stacked = np.stack(betas_set)
     columns = collection.columns[1:]

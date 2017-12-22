@@ -12,9 +12,9 @@ $("#symbol_input").tokenInput("http://127.0.0.1:5000/companies",
         'theme': 'mac',
         'onAdd': function (item) {
             symbols.push(item.id);
-            if (startDate && endDate) {
-                getBetas([item.id], startDate, endDate);
-            }
+            // if (startDate && endDate) {
+            //     getBetas([item.id], startDate, endDate);
+            // }
         },
         'onDelete': function (item) {
             var idx = symbols.indexOf(item);
@@ -22,14 +22,17 @@ $("#symbol_input").tokenInput("http://127.0.0.1:5000/companies",
                 symbols.splice(idx, 1);
             }
             removeBeta(item.id);
+            removeBeta('Portfolio');
         }
     });
 
-var fifteenYearsAgo = new Date();
-fifteenYearsAgo.setYear(fifteenYearsAgo.getFullYear()-15);
+$('#retrieve_button').on('click', function(){
+    getBetas();
+});
+
 $("#date_range").dateRangePicker({
     autoClose:true,
-    startDate: fifteenYearsAgo.toISOString().substr(0,10),
+    startDate: '2007-11-30',
     endDate: '2017-12-20',
     monthSelect: true,
     yearSelect: true,
@@ -38,7 +41,6 @@ $("#date_range").dateRangePicker({
         if(!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
             startDate = s.substr(0, 10);
             endDate = s.substr(-10, 10);
-            getBetas(symbols, startDate, endDate);
             $(this).val(s);
         }
     }
@@ -49,10 +51,12 @@ function removeBeta(symbol){
     drawChart();
 }
 
-function getBetas(symbols, startDate, endDate) {
+function getBetas() {
+    var window = $('#window').val();
     data = {'start': startDate,
             'end':endDate,
-            'symbols':symbols};
+            'symbols':symbols,
+            'window':window};
 
     $.ajax({
         //TODO replace URL

@@ -10,33 +10,34 @@ alpha_vantage_key = 'LLU8D8CBCS87GWXU'
 market = None
 
 
+#https://www.quandl.com/api/v3/datatables/WIKI/PRICES.csv?symbol=AAPL&api_key=5MzkPyT6BEVVv3u9-kkH
+
+
 class BetasForSymbols(Resource):
     def post(self):
         form = request.form
         start_date = form['start']
         end_date = form['end']
         symbols = form.getlist('symbols[]')
+        window = int(form['window'])
 
         collection = market.copy()
         for symbol in symbols:
             stock = pd.read_csv(app.open_resource('data/dailies/daily_'+symbol+'.csv'),
-                                 usecols=['timestamp', 'close'], parse_dates=['timestamp'],index_col='timestamp')
+                        usecols=['timestamp', 'close'], parse_dates=['timestamp'],index_col='timestamp').sort_index()
             stock.columns = [symbol]
-            collection = collection.join(stock)
+            collection = collection.join(stock, how='inner')
 
-        collection = collection[end_date:start_date]
-        columns = list(collection)
-        columns.remove('MKT')
-        collection['Portfolio'] = collection[columns].sum(axis=1)
-        betas = calculator.calculate(collection,30)
+        collection = collection[start_date:end_date]
+        betas = calculator.calculate(collection, window)
         return make_response(betas.to_json(orient='columns', date_format='iso'))
 
 
 def initialize_app():
     app = Flask(__name__)
     global market
-    market = pd.read_csv(app.open_resource('data/dailies/daily_INX.csv'),
-                                usecols=['timestamp', 'close'], index_col='timestamp')
+    market = pd.read_csv(app.open_resource('data/dailies/market.csv'),
+                                usecols=['timestamp', 'close'], parse_dates=['timestamp'], index_col='timestamp')
     market.columns = ['MKT']
     return app
 
@@ -56,8 +57,7 @@ def close_connection(exception):
 
 @app.route('/')
 def index():
-    return render_template('index.html',
-                           header_one='The first header')#TODO Replace or remove this param - only meant as example
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
