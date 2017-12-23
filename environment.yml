@@ -1,0 +1,8 @@
+name: citadel_betas
+dependencies:
+  - flask
+  - numpy
+  - pandas
+  - sqlite3
+  - pip:
+    - flask_restful
