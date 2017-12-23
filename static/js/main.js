@@ -12,12 +12,9 @@ $("#symbol_input").tokenInput("/companies",
         'theme': 'mac',
         'onAdd': function (item) {
             symbols.push(item.id);
-            // if (startDate && endDate) {
-            //     getBetas([item.id], startDate, endDate);
-            // }
         },
         'onDelete': function (item) {
-            var idx = symbols.indexOf(item);
+            var idx = symbols.indexOf(item.id);
             if (idx > -1){
                 symbols.splice(idx, 1);
             }

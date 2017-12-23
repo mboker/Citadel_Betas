@@ -1,1 +1,1 @@
-web: gunicorn citadel_project
+web: gunicorn citadel_project:app
