@@ -26,8 +26,8 @@ def get_companies(query_string):
 
 def get_company_db():
     db = getattr(g, '_database', None)
-    if db is None:
-        db = g._database = sqlite3.connect(DATABASE)
+    # if db is None:
+    #     db = g._database = sqlite3.connect(DATABASE)
     db.row_factory = make_dicts
     return db
 

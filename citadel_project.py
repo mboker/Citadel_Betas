@@ -4,6 +4,7 @@ from flask import g, request, make_response
 import pandas as pd
 from service.company import Company
 from service import calculator
+import sqlite3
 
 alpha_vantage_key = 'LLU8D8CBCS87GWXU'
 quandl_key = '5MzkPyT6BEVVv3u9-kkH'
@@ -34,12 +35,25 @@ class BetasForSymbols(Resource):
         return make_response(betas.to_json(orient='columns', date_format='iso'))
 
 
+def get_db(app):
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = g._database = sqlite3.connect(app)
+    db.row_factory = make_dicts
+    return db
+
+
+def make_dicts(cursor, row):
+    return dict((cursor.description[idx][0], value)
+                for idx, value in enumerate(row))
+
 def initialize_app():
     app = Flask(__name__)
     global market
     market = pd.read_csv(app.open_resource('data/dailies/market.csv'),
                                 usecols=['timestamp', 'close'], parse_dates=['timestamp'], index_col='timestamp')
     market.columns = ['MKT']
+    get_db(app)
     return app
 
 
