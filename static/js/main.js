@@ -112,7 +112,7 @@ function drawChart() {
             if (!chartDataObj[date]) {
                 chartDataObj[date] = {};
             }
-            chartDataObj[date][symbol] = betas[symbol][date];
+            chartDataObj[date][symbol] = parseFloat(Math.round(betas[symbol][date] * 100) / 100).toFixed(2);;
         });
 
         if (symbol == 'Aggregate'){
