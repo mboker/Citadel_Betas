@@ -1,0 +1,19 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+
+flask = "*"
+flask_restful = "*"Pipfile.lock
+gunicorn = "*"
+sqlite3 = "*"
+pandas = "*"
+numpy = "*"
+
+
+[requires]
+
+python_version = "3.6"
