@@ -14,7 +14,7 @@ def roll(df, window):
 
 
 def calculate(collection, window):
-    collection = collection.pct_change()
+    collection = collection.pct_change().fillna(method='backfill', limit=2)
     betas_set = [calc_betas(sub_frame) for sub_frame in roll(collection, window)]
     stacked = np.stack(betas_set)
     columns = collection.columns[1:]
