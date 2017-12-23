@@ -4,16 +4,12 @@ from flask import g, request, make_response
 import pandas as pd
 from service import calculator
 import sqlite3
-from werkzeug.utils import secure_filename
 
-alpha_vantage_key = 'LLU8D8CBCS87GWXU'
 quandl_key = '5MzkPyT6BEVVv3u9-kkH'
+alphavantage_key = 'LLU8D8CBCS87GWXU'
 DATABASE = 'beta_schema.db'
 
 market = None
-
-
-#https://www.quandl.com/api/v3/datatables/WIKI/PRICES.csv?symbol=AAPL&api_key=5MzkPyT6BEVVv3u9-kkH
 
 
 class BetasForSymbols(Resource):
@@ -23,7 +19,7 @@ class BetasForSymbols(Resource):
         end_date = form['end']
         symbols = form.getlist('symbols[]')
         window = int(form['window'])
-        old_stocks = []
+        empty_stocks = []
 
         collection = market.copy()
         for symbol in symbols:
@@ -32,9 +28,15 @@ class BetasForSymbols(Resource):
                         usecols=['date', 'close'], parse_dates=['date'],index_col='date').sort_index()
             except FileNotFoundError:
                 stock = pd.read_csv('https://www.quandl.com/api/v3/datatables' +
-                                    '/WIKI/PRICES.csv?ticker='+ symbol +'&api_key='+quandl_key,
+                                    '/WIKI/PRICES.csv?date.gte=20071130&ticker=' + symbol + '&api_key='+quandl_key,
                                     usecols=['date', 'close'], parse_dates=['date'],
                                     index_col='date').sort_index()
+                if len(stock.values) == 0 :
+                    stock = pd.read_csv('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY'+
+                                        '&datatype=csv&outputsize=full&symbol='+symbol+'&apikey=' + alphavantage_key,
+                                        usecols=['timestamp', 'close'], parse_dates=['timestamp'],
+                                        index_col='timestamp').sort_index()
+                    stock.index.names = ['date']
                 stock = stock['2007-11-30':]
                 f = open(app.root_path+'/data/dailies/daily_'+symbol+'.csv', 'w')
                 csv_string = stock.to_csv()
@@ -42,14 +44,22 @@ class BetasForSymbols(Resource):
                 f.close()
 
             stock.columns = [symbol]
+            stock = stock[start_date:end_date]
             if len(stock.values) > 0:
                 collection = collection.join(stock, how='left')
             else:
-                old_stocks.append(symbol)
+                empty_stocks.append(symbol)
 
         collection = collection[start_date:end_date]
+        if window > len(collection.values):
+            return make_response('{"error":"The window you selected is larger than the number of trading days in your '
+                                 'date range.  Please select a wider range or a smaller window."}')
+
         betas = calculator.calculate(collection, window)
-        return make_response(betas.to_json(orient='columns', date_format='iso'))
+
+        return make_response('{"betas":'+
+                             betas.to_json(orient='columns', date_format='iso') + ',' +
+                             '"empty_stocks":' + str(empty_stocks).replace('\'', '"') + '}')
 
 
 class Company(Resource):

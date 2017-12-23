@@ -19,7 +19,7 @@ $("#symbol_input").tokenInput("/companies",
                 symbols.splice(idx, 1);
             }
             removeBeta(item.id);
-            removeBeta('Portfolio');
+            removeBeta('Aggregate');
         }
     });
 
@@ -64,22 +64,35 @@ function removeBeta(symbol){
 
 function getBetas() {
     var window = $('#window').val();
+    betas = {};
     data = {'start': startDate,
             'end':endDate,
             'symbols':symbols,
             'window':window};
 
     $.ajax({
-        //TODO replace URL
         url: '/betas',
         method: 'POST',
         data: data,
         dataType: 'json',
         success: function (response) {
-            Object.keys(response).forEach(function(symbol){
-               betas[symbol] = response[symbol];
-            });
-            drawChart();
+            if (response.error) {
+                alert(response.error);
+            }
+            else {
+                if (response.empty_stocks.length > 0) {
+                    var alertString = 'Closing values could not be found for the following symbols in the date range' +
+                        ' specified.  ';
+                    response.empty_stocks.forEach(function (symbol) {
+                        alertString += ' ' + symbol;
+                    });
+                    alert(alertString);
+                }
+                Object.keys(response.betas).forEach(function (symbol) {
+                    betas[symbol] = response.betas[symbol];
+                });
+                drawChart();
+            }
         }
     });
 }
@@ -101,27 +114,51 @@ function drawChart() {
             chartDataObj[date][symbol] = betas[symbol][date];
         });
 
+        if (symbol == 'Aggregate'){
+             graphs.push(
+                {
+                    "id": symbol,
+                    "bullet": "round",
+                    "bulletBorderAlpha": 1,
+                    "bulletColor": "#000000",
+                    "lineColor": "#000000",
+                    "bulletSize": 1,
+                    "hideBulletsCount": 50,
+                    "lineThickness": 4,
+                    "title": symbol,
+                    "useLineColorForBulletBorder": true,
+                    "valueField": symbol
+                });
 
-        graphs.push(
-            {
+            valueAxes.push({
                 "id": symbol,
-                "bullet": "round",
-                "bulletBorderAlpha": 1,
-                "bulletColor": "#FFFFFF",
-                "bulletSize": 1,
-                "hideBulletsCount": 50,
-                "lineThickness": 2,
-                "title": symbol,
-                "useLineColorForBulletBorder": true,
-                "valueField": symbol
+                "axisAlpha": 0,
+                "position": "left",
+                "ignoreAxisWidth": true
             });
+        }
+        else{
+            graphs.push(
+                {
+                    "id": symbol,
+                    "bullet": "round",
+                    "bulletBorderAlpha": 1,
+                    "bulletColor": "#FFFFFF",
+                    "bulletSize": 1,
+                    "hideBulletsCount": 50,
+                    "lineThickness": 2,
+                    "title": symbol,
+                    "useLineColorForBulletBorder": true,
+                    "valueField": symbol
+                });
 
-        valueAxes.push({
-            "id": symbol,
-            "axisAlpha": 0,
-            "position": "left",
-            "ignoreAxisWidth": true
-        });
+            valueAxes.push({
+                "id": symbol,
+                "axisAlpha": 0,
+                "position": "left",
+                "ignoreAxisWidth": true
+            });
+        }
     });
 
     var chartData = [];

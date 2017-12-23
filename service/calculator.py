@@ -14,7 +14,12 @@ def roll(df, window):
 
 
 def calculate(collection, window):
-    collection = collection.pct_change().fillna(method='backfill', limit=2)
+    collection = collection.pct_change().fillna(method='backfill', limit=10)
+    columns = list(collection.columns)
+    columns.remove('MKT')
+    collection_copy = collection[columns].copy()
+    collection['Aggregate'] = collection_copy.mean(numeric_only=True, axis=1)
+
     betas_set = [calc_betas(sub_frame) for sub_frame in roll(collection, window)]
     stacked = np.stack(betas_set)
     columns = collection.columns[1:]
