@@ -2,356 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd1d09f3-7c33-4acd-9aae-83996cd2f541" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AIN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AJRD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AKER.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AKR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ALB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ALN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ALNY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ALX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AMDA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AMN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AMTX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ANDX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ANSS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_APHB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARCI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARCO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARGS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARMK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARNC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARRY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ARTW.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ASML.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ASX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ATOS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ATUS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AVGR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AVY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AWX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AXE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_AYTU.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BAA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BDR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BEDU.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BGS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BIP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BITA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BKYI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BLDR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BLL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BNSO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BNTC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BOSC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BRC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BSPM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BURG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BWA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_BWLD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CADC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CAKE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CALM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CBPO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CCMP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CCOI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CDNS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CDW.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CEI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CENT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CHCI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CHD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CHFS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CHRW.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CJ.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CLDR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CLWT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CNP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_COG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_COKE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CPE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CPHI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CPRT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CPS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CQP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CSGP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CSOD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CTXS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CUK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CVE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CVG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CVO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CVRR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CWT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_CYTX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DCIX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DELT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DGX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DOOR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DORM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DRH.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DSGX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DVA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_DYNT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ECA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_EDN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_EDU.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ELSE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ENIA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ENRJ.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ENV.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_EQT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ERIC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ESL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ESV.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_EXPD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_EXR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FANG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FBHS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FCRE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FELE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FFHL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FMC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FNV.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FOE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FOLD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FORD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FORTY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FRSX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FTFT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_FTI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GATX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GBR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GCP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GENE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GEVO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GLOW.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GPC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GPS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_GRMN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HAS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HBM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HCP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HEB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HEP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HOLX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HSIC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HSNI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_HYH.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IBP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IDSA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IEX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IFON.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IMMP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IMRN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IMUC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_INGR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_INOV.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_INPX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_INSM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_INX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IPGP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IRWD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_IVR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_JAGX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_JBHT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_JNPR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_JRJR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_KMX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_KONE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_KS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LAUR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LBIX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LEA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LGCYP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LINU.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LNT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LPI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LQ.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LSXMK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LTBR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LULU.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_LXP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MARPS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MDGS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MELI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MGP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MICR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MICT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MKC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MLHR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MLI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MLM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MMSI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MNGA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MOSY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MRDN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MRO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MRVL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MSDI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MTFB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MTH.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MTOR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MTP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MTSI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MTSL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MTX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MWA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MXC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MYGN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_MYOS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NBL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NCLH.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NEP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NEXA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NFEC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NLY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NNDM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NSPR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NSYS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NTN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NURO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NVR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_NVRO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_OASM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ODFL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_OGEN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ONTX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_OPGN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ORBK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ORIG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ORPN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PAAS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PANW.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PCH.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PED.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PEGI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PKG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PLAY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PLCE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PLXS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PNR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PNW.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PQG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PRGO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PRPO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PVH.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PW.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_PZRX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_QEP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_QLYS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_QVCA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_QVCB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RCON.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RELV.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_REXR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_REXX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RGSE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RH.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RHE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RKDA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RLOG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RMD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RMGN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RMP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ROIC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ROKA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ROSG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_RYAAY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SAM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SANM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SBOT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SCON.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SEM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SEMG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SEP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SFIX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SGLB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SGOC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SHPG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SIR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SJM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SMIT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SMTC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SNDE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SNES.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SNPS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SOFO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SPEX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SPLK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SQ.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SSKN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_STAF.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_STLY.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_STRP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_STX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SUPN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_SYNT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TAIT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TEAM.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TECK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TELL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TENX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TGC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_THST.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TIK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TRMB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TROV.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TROX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TRPX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TSRI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TTD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TTWO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_TV.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_UDR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_UHS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ULTA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_URI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_USEG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_UUU.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VAR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VG.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VHI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VIA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VIAB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VII.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VNTR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VOD.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_VTGN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WAGE.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WLK.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WLL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WMGI.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WMLP.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WNS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WPCS.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WUBA.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_WYN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_XCO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_XEC.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_XHR.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_XTLB.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_XTNT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_YECO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_YNDX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_YTEN.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/dailies/daily_ZTO.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/daily_AAPL.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/daily_INX.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/data/daily_MSFT.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/environment.yml" afterPath="$PROJECT_DIR$/environment.yml" />
+      <change beforePath="$PROJECT_DIR$/citadel_project.py" afterPath="$PROJECT_DIR$/citadel_project.py" />
+      <change beforePath="$PROJECT_DIR$/service/company.py" afterPath="$PROJECT_DIR$/service/company.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -383,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="citadel_project.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="citadel_project.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/citadel_project.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="-495">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -439,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="company.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="company.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/company.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="-169">
+              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -519,13 +171,13 @@
         <option value="$PROJECT_DIR$/data_gather.py" />
         <option value="$PROJECT_DIR$/store_to_db.py" />
         <option value="$PROJECT_DIR$/calculator.py" />
-        <option value="$PROJECT_DIR$/service/company.py" />
         <option value="$PROJECT_DIR$/experiment.py" />
-        <option value="$PROJECT_DIR$/citadel_project.py" />
         <option value="$PROJECT_DIR$/static/js/main.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/service/calculator.py" />
+        <option value="$PROJECT_DIR$/citadel_project.py" />
+        <option value="$PROJECT_DIR$/service/company.py" />
       </list>
     </option>
   </component>
@@ -536,8 +188,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="918" />
-    <option name="y" value="191" />
+    <option name="x" value="140" />
+    <option name="y" value="90" />
     <option name="width" value="1582" />
     <option name="height" value="871" />
   </component>
@@ -733,7 +385,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="918" y="191" width="1582" height="871" extended-state="0" />
+    <frame x="140" y="90" width="1582" height="871" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1279,22 +931,22 @@ beta2 = covariance[0, 1] / covariance[1, 1]</expression-string>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/company.py">
+    <entry file="file://$PROJECT_DIR$/citadel_project.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="-495">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/citadel_project.py">
+    <entry file="file://$PROJECT_DIR$/service/company.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="-169">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,6 +6,7 @@ from service.company import Company
 from service import calculator
 
 alpha_vantage_key = 'LLU8D8CBCS87GWXU'
+quandl_key = '5MzkPyT6BEVVv3u9-kkH'
 
 market = None
 

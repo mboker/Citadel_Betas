@@ -3,7 +3,7 @@ from flask import g, request
 import sqlite3
 
 #TODO: replace this w some function to get relative path
-DATABASE = '/Users/mboker/PycharmProjects/citadel_project/beta_schema.db'
+DATABASE = 'beta_schema.db'
 
 
 class Company(Resource):
