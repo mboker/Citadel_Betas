@@ -27,21 +27,28 @@ $('#retrieve_button').on('click', function(){
     getBetas();
 });
 
-$("#date_range").dateRangePicker({
-    autoClose:true,
-    startDate: '2007-11-30',
-    endDate: '2017-12-20',
-    monthSelect: true,
-    yearSelect: true,
-
-    setValue: function(s){
-        if(!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
-            startDate = s.substr(0, 10);
-            endDate = s.substr(-10, 10);
-            $(this).val(s);
-        }
-    }
+$('#window').on('change', function(){
+   buildDateRangePicker();
 });
+
+function buildDateRangePicker() {
+    var window = $('#window').val();
+    $("#date_range").dateRangePicker({
+        autoClose: true,
+        startDate: '2007-11-30',
+        endDate: '2017-12-20',
+        monthSelect: true,
+        yearSelect: true,
+        minDays: window,
+        setValue: function (s) {
+            if (!$(this).attr('readonly') && !$(this).is(':disabled') && s != $(this).val()) {
+                startDate = s.substr(0, 10);
+                endDate = s.substr(-10, 10);
+                $(this).val(s);
+            }
+        }
+    });
+}
 
 function removeBeta(symbol){
     delete betas[symbol];
@@ -176,3 +183,5 @@ function drawChart() {
         chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1);
     }
 }
+
+buildDateRangePicker();

@@ -23,6 +23,7 @@ class BetasForSymbols(Resource):
         end_date = form['end']
         symbols = form.getlist('symbols[]')
         window = int(form['window'])
+        old_stocks = []
 
         collection = market.copy()
         for symbol in symbols:
@@ -41,7 +42,10 @@ class BetasForSymbols(Resource):
                 f.close()
 
             stock.columns = [symbol]
-            collection = collection.join(stock, how='inner')
+            if len(stock.values) > 0:
+                collection = collection.join(stock, how='left')
+            else:
+                old_stocks.append(symbol)
 
         collection = collection[start_date:end_date]
         betas = calculator.calculate(collection, window)
