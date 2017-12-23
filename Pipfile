@@ -9,7 +9,7 @@ verify_ssl = true
 flask = "*"
 flask_restful = "*"
 gunicorn = "*"
-sqlite = "3.13.0"
+sqlite = “*”
 pandas = "*"
 numpy = "*"
 
