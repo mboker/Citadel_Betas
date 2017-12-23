@@ -33,6 +33,13 @@ $('#window').on('change', function(){
 
 function buildDateRangePicker() {
     var window = $('#window').val();
+
+    if (getDaysBetween(startDate, endDate) <= window){
+        startDate = null;
+        endDate = null;
+        $("#date_range").val('');
+    }
+
     $("#date_range").dateRangePicker({
         autoClose: true,
         startDate: '2007-11-30',
@@ -182,6 +189,23 @@ function drawChart() {
     function zoomChart() {
         chart.zoomToIndexes(chart.dataProvider.length - 40, chart.dataProvider.length - 1);
     }
+}
+
+function getDaysBetween( date_string_1, date_string_2 ) {
+  //Get 1 day in milliseconds
+  var one_day=1000*60*60*24;
+  var date1 = new Date(date_string_1);
+  var date2 = new Date(date_string_2);
+
+  // Convert both dates to milliseconds
+  var date1_ms = date1.getTime();
+  var date2_ms = date2.getTime();
+
+  // Calculate the difference in milliseconds
+  var difference_ms = date2_ms - date1_ms;
+
+  // Convert back to days and return
+  return Math.round(difference_ms/one_day);
 }
 
 buildDateRangePicker();
