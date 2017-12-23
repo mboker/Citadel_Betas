@@ -4,6 +4,7 @@ from flask import g, request, make_response
 import pandas as pd
 from service import calculator
 import sqlite3
+from werkzeug.utils import secure_filename
 
 alpha_vantage_key = 'LLU8D8CBCS87GWXU'
 quandl_key = '5MzkPyT6BEVVv3u9-kkH'
@@ -25,8 +26,20 @@ class BetasForSymbols(Resource):
 
         collection = market.copy()
         for symbol in symbols:
-            stock = pd.read_csv(app.open_resource('data/dailies/daily_'+symbol+'.csv'),
-                        usecols=['timestamp', 'close'], parse_dates=['timestamp'],index_col='timestamp').sort_index()
+            try:
+                stock = pd.read_csv(app.open_resource('data/dailies/daily_'+symbol+'.csv'),
+                        usecols=['date', 'close'], parse_dates=['date'],index_col='date').sort_index()
+            except FileNotFoundError:
+                stock = pd.read_csv('https://www.quandl.com/api/v3/datatables' +
+                                    '/WIKI/PRICES.csv?ticker='+ symbol +'&api_key='+quandl_key,
+                                    usecols=['date', 'close'], parse_dates=['date'],
+                                    index_col='date').sort_index()
+                stock = stock['2007-11-30':]
+                f = open(app.root_path+'/data/dailies/daily_'+symbol+'.csv', 'w')
+                csv_string = stock.to_csv()
+                f.write(csv_string)
+                f.close()
+
             stock.columns = [symbol]
             collection = collection.join(stock, how='inner')
 
