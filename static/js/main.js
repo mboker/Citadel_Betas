@@ -70,6 +70,7 @@ function getBetas() {
             'symbols':symbols,
             'window':window};
 
+    loading.show();
     $.ajax({
         url: '/betas',
         method: 'POST',
@@ -93,10 +94,10 @@ function getBetas() {
                 });
                 drawChart();
             }
+            loading.hide();
         }
     });
 }
-
 
 function drawChart() {
     var graphs = [];
@@ -246,3 +247,6 @@ function getDaysBetween( date_string_1, date_string_2 ) {
 }
 
 buildDateRangePicker();
+
+var loading = $('#loading_div');
+loading.hide();
