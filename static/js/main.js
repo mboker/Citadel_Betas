@@ -3,7 +3,7 @@ var betas = {},
     startDate = null,
     endDate = null;
 
-$("#symbol_input").tokenInput("http://127.0.0.1:5000/companies",
+$("#symbol_input").tokenInput("/companies",
     {
         'minChars': 2,
         'searchDelay': 200,
@@ -60,7 +60,7 @@ function getBetas() {
 
     $.ajax({
         //TODO replace URL
-        url: 'http://127.0.0.1:5000/betas',
+        url: '/betas',
         method: 'POST',
         data: data,
         dataType: 'json',
